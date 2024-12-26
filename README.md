@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="img/soulscript-light.png" height="200px" />
+<img src="img/logo.png" height="200px" />
 
 # soulscript
 
