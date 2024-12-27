@@ -6,7 +6,7 @@
 
 [![license MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![docs gitbook](https://img.shields.io/badge/docs-gitbook-green)](https://soulgraph.gitbook.io/soulgraph-docs) [![Discord](https://img.shields.io/discord/1319570689350696970?label=&labelColor=6A7EC2&logo=discord&logoColor=ffffff&color=7389D8)](https://discord.gg/TpavQZnT) [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/soulgra_ph)](https://twitter.com/soulgra_ph)
 
-A portable, framework-agnostic & extendable standard for defining rich agent personalities that evolve over time.
+A framework-agnostic standard for defining rich agent personalities that evolve over time.
 
 
 
@@ -16,20 +16,20 @@ A portable, framework-agnostic & extendable standard for defining rich agent per
 </div>
 
 
-# What this repo is, and isn't
+## What this repo is, and isn't
 
-This repo contains the WIP [spec](https://github.com/soulgraph/soulscript-spec/blob/main/spec/SPEC.md) for soulscript. This is not a client library for soulgraph (those are forthcoming in separate repos), but an effort to rally the wider developer community in pursuit of a standardized, framework-agnostic approach to defining agent personalities.
+This repo contains the WIP spec for soulscript. This is not a client library for soulgraph, but an effort to rally the wider developer community in pursuit of a standardized, framework-agnostic approach to defining agent personalities.
 
 > [!NOTE]
-> You can try our (early, but working) implementation of soulscript on the playground at https://soulgra.ph
+> You can run any examples from this repo on the playground at https://soulgra.ph
 
 ## Navigating the repo
 
-- `spec/SPEC.md` - core spec
+- `spec/SPEC.md` - core soulscript spec
 - `examples/` - original & community-sourced examples
 - `implementations/` - basic example implementations (basic example in spec, standalone coming soon)
 
-A good place to start would be the examples. You can run these with real-time v2v on the soulgraph playground today.
+A good place to start would be the examples below.
 
 | Agent | Files |
 |-----------|-------|
