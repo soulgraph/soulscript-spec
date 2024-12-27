@@ -39,7 +39,7 @@ A good place to start would be the examples below.
 | fartcoin-maxi | [`agent.soul`](examples/fartcoin-maxi/agent.soul) · [`memories.json`](examples/fartcoin-maxi/memories.json) |
 
 
-# Why does this need to exist?
+## Why does this need to exist?
 
 There's plenty of tooling for developers to build the logic layer, or the "hard skills" of their agents. There's none to give them "soft-skills". With soulscript, our goal is to give developers a standardized way to:
 
@@ -67,8 +67,8 @@ Without filter:
 
 <img src="img/memory.jpg"/>
 
-To add further complexity, the agent's personality can evolve between two interaction events within the same session; with soulscript, we can quickly and safely reconstruct the prompt for the LLM call we make at each step with the latest version of the agent's personality, and just the features we need to build that specific personality filter (i.e. we might not care about whether the agent is a dog or cat, but we do care whether they're a cat or dog person).
+Using soulscript, we can safely reconstruct the prompt for each LLM call with the most up-to-date representation of the agent's personality. We can select just the characteristics we need to build that specific personality filter (i.e. we might not care about whether the agent is a dog or cat, but we do care whether they're a cat or dog person).
 
-## Disclosure: how soulgraph benefits from the adoption of soulscript
+## How soulgraph benefits from the adoption of soulscript
 
-Soulgraph is a platform, with a token on Solana, that enables developers to add persistent memory, real-time comms and other "soft-skills" to their agents without having to set up their own infra. If popular agent frameworks (and in turn, developers) adopt soulscript, it makes our lives much easier when it comes to building integrations.
+Soulgraph is a platform, with a token on Solana, that enables developers to add persistent, user-bound memory, real-time comms and other "soft-skills" to their agents without having to set up their own infra. If popular agent frameworks (and in turn, developers) adopt soulscript, it makes our lives much easier when it comes to building integrations.
