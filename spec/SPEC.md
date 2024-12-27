@@ -51,8 +51,8 @@ Soulscript uses a standardized numerical scale system for traits, importances, a
 
 - **Range**: All numerical values use a -1.0 to 1.0 scale
 - **Baseline**: 0.0 represents the baseline/neutral expression
-- **Positive Values**: 0.0 to 1.0 represents increased expression from baseline
-- **Negative Values**: -1.0 to 0.0 represents decreased expression from baseline
+- **Positive values**: 0.0 to 1.0 represents increased expression from baseline
+- **Negative values**: -1.0 to 0.0 represents decreased expression from baseline
 
 #### Scale examples
 
