@@ -27,7 +27,17 @@ This repo contains the WIP [spec](https://github.com/soulgra-ph/soulscript/blob/
 
 - `spec/SPEC.md` - core spec
 - `examples/` - original & community-sourced examples
-- `implementations/` - basic example implementations
+- `implementations/` - basic example implementations (basic example in spec, standalone coming soon)
+
+A good place to start would be the examples. You can run these with real-time v2v on the soulgraph playground today.
+
+| Agent | Files |
+|-----------|-------|
+| marcus_aurelius | [`agent.soul`](examples/marcus_aurelius/agent.soul) · [`memories.json`](examples/marcus_aurelius/memories.json) |
+| luce | [`agent.soul`](examples/luce/agent.soul) · [`memories.json`](examples/luce/memories.json) |
+| irina | [`agent.soul`](examples/irina/agent.soul) · [`memories.json`](examples/irina/memories.json) |
+| fartcoin-maxi | [`agent.soul`](examples/fartcoin-maxi/agent.soul) · [`memories.json`](examples/fartcoin-maxi/memories.json) |
+
 
 # Why does this need to exist?
 
