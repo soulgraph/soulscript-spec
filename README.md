@@ -35,6 +35,8 @@ A good place to start would be the examples below.
 | irina           | [`agent.soul`](examples/irina/agent.soul) · [`memories.json`](examples/irina/memories.json)                     |
 | fartcoin-maxi   | [`agent.soul`](examples/fartcoin-maxi/agent.soul) · [`memories.json`](examples/fartcoin-maxi/memories.json)     |
 
+For a full index of examples with playground links, see [SOULS_INDEX.md](examples/SOUL_INDEX.md).
+
 ## Why does this need to exist?
 
 There's plenty of tooling for developers to build the logic layer, or the "hard skills" of their agents. There's none to give them "soft-skills". With soulscript, our goal is to give developers a standardized way to:
