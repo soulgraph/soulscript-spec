@@ -69,6 +69,6 @@ Without filter:
 
 Using soulscript, we can safely reconstruct the prompt for each LLM call with the most up-to-date representation of the agent's personality. We can select just the characteristics we need to build that specific personality filter (i.e. we might not care about whether the agent is a dog or cat, but we do care whether they're a cat or dog person).
 
-## How soulgraph benefits from the adoption of soulscript
+## Soulgraph & soulscript
 
-Soulgraph is a platform, with a token on Solana, that enables developers to add persistent, user-bound memory, real-time comms and other "soft-skills" to their agents without having to set up their own infra. If popular agent frameworks (and in turn, developers) adopt soulscript, it makes our lives much easier when it comes to building integrations.
+Soulgraph is a platform, with a token on Solana, that enables developers to add persistent, user-bound memory, real-time comms and other "soft-skills" to their agents without having to set up their own infra.
