@@ -62,6 +62,3 @@ To add further complexity, the agent's personality can evolve between two intera
 ## Disclosure: how soulgraph benefits from the adoption of soulscript
 
 Soulgraph is a platform, with a token on Solana, that enables developers to add persistent memory, real-time comms and other "soft-skills" to their agents without having to set up their own infra. If popular agent frameworks (and in turn, developers) adopt soulscript, it makes our lives much easier when it comes to building integrations.
-
-
-
