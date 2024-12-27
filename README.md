@@ -21,7 +21,7 @@ A portable, framework-agnostic & extendendable standard for defining rich agent 
 This repo contains the WIP [spec](https://github.com/soulgra-ph/soulscript/blob/main/spec/soulscript.md) for soulscript. This is not a client library for soulgraph (those are forthcoming in separate repos), but an effort to rally the wider developer community in pursuit of a standardized, framework-agnostic approach to defining agent personalities.
 
 > [!NOTE]
-> You can try our (early, but working) implementation of soulscript on the playground at https://soulgra.ph.
+> You can try our (early, but working) implementation of soulscript on the playground at https://soulgra.ph
 
 ## Navigating the repo
 
