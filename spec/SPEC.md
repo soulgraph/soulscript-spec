@@ -1,6 +1,6 @@
 # Soulscript specification v0.1-draft
 > [!WARNING]
-> Here be dragons. This is very much a work in progress, and meant as a starting point for community contributions.
+> Here be dragons. This is very much a work in progress, and meant as a starting point for community contributions. The soulgraph playground may not support all of these definitions yet.
 
 ## 1. Introduction
 
