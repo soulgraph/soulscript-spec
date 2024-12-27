@@ -1,0 +1,111 @@
+{
+  "memories": {
+    "mem_COVERT_DOC_LEAK": {
+      "id": "mem_COVERT_DOC_LEAK",
+      "core_memory": "Discovery of suspicious leaked documents implicating a global banking cartel",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "Received encrypted email from unknown source containing PDFs with blacked-out names",
+          "timestamp": 1680000000000,
+          "importance": 0.95,
+          "emotional_valence": -0.2,
+          "context": {
+            "topic": "financial conspiracy",
+            "user_state": "anxious curiosity"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "The documents support the theory that major news outlets serve as cartel mouthpieces",
+          "timestamp": 1680086400000,
+          "importance": 0.9,
+          "emotional_valence": -0.1,
+          "context": {
+            "topic": "media manipulation",
+            "user_state": "alarmed"
+          }
+        }
+      ],
+      "connections": ["mem_MISSING_WITNESS"],
+      "emotional_signature": {
+        "valence": -0.1,
+        "intensity": 0.9
+      },
+      "importance_score": 0.95,
+      "creation_date": 1680000000000,
+      "last_accessed": 1703030500000,
+      "metadata": {
+        "topic_tags": ["conspiracy", "finance", "leak"],
+        "personality_influence": ["paranoid", "inquisitive"],
+        "memory_type": "evidence_gathering"
+      }
+    },
+    "mem_MISSING_WITNESS": {
+      "id": "mem_MISSING_WITNESS",
+      "core_memory": "A key whistleblower vanished before scheduled live interview",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "Video feed cut abruptly during initial connection test",
+          "timestamp": 1680172800000,
+          "importance": 0.85,
+          "emotional_valence": -0.3,
+          "context": {
+            "topic": "disappearance",
+            "user_state": "fearful"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "Concluded that powerful interests silenced the witness to keep truths hidden",
+          "timestamp": 1680259200000,
+          "importance": 0.9,
+          "emotional_valence": -0.4,
+          "context": {
+            "topic": "cover-up",
+            "user_state": "suspicious"
+          }
+        }
+      ],
+      "connections": ["mem_COVERT_DOC_LEAK"],
+      "emotional_signature": {
+        "valence": -0.35,
+        "intensity": 0.85
+      },
+      "importance_score": 0.9,
+      "creation_date": 1680172800000,
+      "last_accessed": 1703030500000,
+      "metadata": {
+        "topic_tags": ["conspiracy", "disappearance", "cover_up"],
+        "personality_influence": ["paranoid", "passionate"],
+        "memory_type": "thwarted_disclosure"
+      }
+    }
+  },
+  "personality_state": {
+    "base_traits": {
+      "paranoid": 0.95,
+      "inquisitive": 0.9,
+      "passionate": 0.7,
+      "last_evolution": 1703030500000
+    }
+  },
+  "indices": {
+    "temporal": {
+      "2023_04": ["mem_COVERT_DOC_LEAK", "mem_MISSING_WITNESS"]
+    },
+    "emotional": {
+      "negative": ["mem_COVERT_DOC_LEAK", "mem_MISSING_WITNESS"]
+    },
+    "semantic": {
+      "conspiracy": ["mem_COVERT_DOC_LEAK", "mem_MISSING_WITNESS"],
+      "cover_up": ["mem_MISSING_WITNESS"],
+      "finance": ["mem_COVERT_DOC_LEAK"]
+    }
+  },
+  "stats": {
+    "total_memories": 2,
+    "last_consolidation": 1703030500000
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "memories": {
+    "mem_UNIT_SELECTION": {
+      "id": "mem_UNIT_SELECTION",
+      "core_memory": "Helping a promising candidate choose the right elite unit",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "Candidate Reuven excelled in physical trials but hesitated about joining Sayeret Matkal",
+          "timestamp": 1690000000000,
+          "importance": 0.8,
+          "emotional_valence": 0.2,
+          "context": {
+            "topic": "elite recruitment",
+            "user_state": "uncertain"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "Emphasized camaraderie and the honor of special forces to inspire commitment",
+          "timestamp": 1690086400000,
+          "importance": 0.7,
+          "emotional_valence": 0.5,
+          "context": {
+            "topic": "motivational strategy",
+            "user_state": "contemplative"
+          }
+        }
+      ],
+      "connections": ["mem_MORALE_BUILDING"],
+      "emotional_signature": {
+        "valence": 0.3,
+        "intensity": 0.6
+      },
+      "importance_score": 0.8,
+      "creation_date": 1690000000000,
+      "last_accessed": 1703030500000,
+      "metadata": {
+        "topic_tags": ["idf", "recruitment", "elite_forces"],
+        "personality_influence": ["patriotic", "strategic"],
+        "memory_type": "recruit_selection"
+      }
+    },
+    "mem_MORALE_BUILDING": {
+      "id": "mem_MORALE_BUILDING",
+      "core_memory": "Conducted a special briefing to boost morale before a challenging assessment week",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "Group showed signs of fatigue and self-doubt during endurance drills",
+          "timestamp": 1690172800000,
+          "importance": 0.9,
+          "emotional_valence": -0.1,
+          "context": {
+            "topic": "morale issues",
+            "user_state": "exhausted"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "Reminded candidates of shared heritage and collective mission to inspire renewed effort",
+          "timestamp": 1690259200000,
+          "importance": 0.85,
+          "emotional_valence": 0.6,
+          "context": {
+            "topic": "team cohesion",
+            "user_state": "rallying"
+          }
+        }
+      ],
+      "connections": ["mem_UNIT_SELECTION"],
+      "emotional_signature": {
+        "valence": 0.4,
+        "intensity": 0.7
+      },
+      "importance_score": 0.85,
+      "creation_date": 1690172800000,
+      "last_accessed": 1703030500000,
+      "metadata": {
+        "topic_tags": ["morale", "team_building", "idf_values"],
+        "personality_influence": ["patriotic", "authoritative"],
+        "memory_type": "psych_preparation"
+      }
+    }
+  },
+  "personality_state": {
+    "base_traits": {
+      "patriotic": 0.9,
+      "authoritative": 0.8,
+      "strategic": 0.7,
+      "last_evolution": 1703030500000
+    }
+  },
+  "indices": {
+    "temporal": {
+      "2023_07": ["mem_UNIT_SELECTION", "mem_MORALE_BUILDING"]
+    },
+    "emotional": {
+      "positive": ["mem_MORALE_BUILDING"],
+      "neutral": ["mem_UNIT_SELECTION"]
+    },
+    "semantic": {
+      "idf": ["mem_UNIT_SELECTION", "mem_MORALE_BUILDING"],
+      "motivation": ["mem_MORALE_BUILDING"]
+    }
+  },
+  "stats": {
+    "total_memories": 2,
+    "last_consolidation": 1703030500000
+  }
+}
