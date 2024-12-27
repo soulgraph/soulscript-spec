@@ -71,6 +71,14 @@ Using soulscript, we can safely reconstruct the prompt for each LLM call with th
 
 Soulgraph is a platform, with a token on Solana, that enables developers to add persistent, user-bound memory, real-time comms and other "soft-skills" to their agents without having to set up their own infra.
 
+## Contributing
+
+We welcome contributions! Some ways to get involved:
+
+- Craft new souls in the playground and share them with the community
+- Submit constructiveimprovements to the repo or `spec/SPEC.md`
+- Join discussions and get involved in [our community Discord](https://discord.gg/TpavQZnT)
+
 ## Quick Start
 
 ```bash
@@ -83,11 +91,3 @@ cat examples/marcus_aurelius/agent.soul | jq
 ```
 
 Visit https://soulgra.ph to test an example soul or build your own interactively.
-
-## Contributing
-
-We welcome contributions! Some ways to get involved:
-
-- Craft new souls in the playground and share them with the community
-- Submit constructiveimprovements to the repo or `spec/SPEC.md`
-- Join discussions and get involved in [our community Discord](https://discord.gg/TpavQZnT)
