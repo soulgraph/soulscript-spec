@@ -31,7 +31,7 @@ This repo contains the WIP spec for soulscript. This is not a client library for
 
 A good place to start would be the examples below.
 
-| Agent | Files |
+| agent | files |
 |-----------|-------|
 | marcus_aurelius | [`agent.soul`](examples/marcus_aurelius/agent.soul) · [`memories.json`](examples/marcus_aurelius/memories.json) |
 | luce | [`agent.soul`](examples/luce/agent.soul) · [`memories.json`](examples/luce/memories.json) |
@@ -41,7 +41,7 @@ A good place to start would be the examples below.
 
 # Why does this need to exist?
 
-There's plenty of tooling for developers to build the logic layer, or "hard skills" of their agents. There's none to give them "soft-skills". With soulscript, our goal is to give developers a standardized way to:
+There's plenty of tooling for developers to build the logic layer, or the "hard skills" of their agents. There's none to give them "soft-skills". With soulscript, our goal is to give developers a standardized way to:
 
 - create agents with distinct personalities that persist across platforms
 
@@ -56,13 +56,13 @@ There's plenty of tooling for developers to build the logic layer, or "hard skil
 <img src="img/agent_anatomy.jpg"/>
  
 
-## A less obvious, practical example: personality filters
-One challenge we've faced while building [soulgraph memory](https://github.com/soulgra-ph/soulgraph-memory) is the need to observe user<>agent interactions through the filter of any given agent's personality. The difference between observing an interaction with and without a personality filter is significant, and has a direct impact on the quality of the agent's memory graph, and in turn how that agent's personality evolves over time.
+## A real-world practical example: personality filters
+One challenge we've faced while building [soulgraph memory](https://github.com/soulgra-ph/soulgraph-memory) is observing user<>agent interactions through the filter of a given agent's personality. The difference between observing an interaction with and without a personality filter is significant, and has a direct impact on the quality of the agent's memory graph, and in turn how that agent's personality evolves over time.
 
-with filter:
+With filter:
 > I saw the user's hesitation to invest in fartcoin as a sign of their ignorance about its inevitable rise.
 
-without filter:
+Without filter:
 > The user hesitated to invest in fartcoin, citing it's lack of a real use case.
 
 <img src="img/memory.jpg"/>
