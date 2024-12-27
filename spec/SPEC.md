@@ -219,7 +219,7 @@ Defines interaction handling and boundaries:
 
 ### 5.1 Base definition
 
-example Definition
+Example base personality definition:
 
 ```json
 {
