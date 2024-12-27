@@ -88,6 +88,6 @@ Visit https://soulgra.ph to test an example soul or build your own interactively
 
 We welcome contributions! Some ways to get involved:
 
-- Build new souls in the playground and share them with the community
+- Craft new souls in the playground and share them with the community
 - Submit constructiveimprovements to the repo or `spec/SPEC.md`
 - Join discussions and get involved in [our community Discord](https://discord.gg/TpavQZnT)
