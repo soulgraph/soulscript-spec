@@ -9,7 +9,7 @@
 Soulscript is a specification for defining portable agent personalities that can be:
 
 1. Implemented across different agent frameworks
-2. Predictably evolve through interactions while maintaining core traits
+2. Predictably evolve through interactions while maintaining stable core traits
 3. Parsed & extended at runtime to support any external service/api or custom integration
 
 ### 1.2 Design principles
@@ -23,9 +23,9 @@ Soulscript is a specification for defining portable agent personalities that can
 Soulscript is designed to be extended at every level without compromising compatibility:
 
 1. **Base extensions**
-   - Add new top-level components alongside existing ones
-   - Extend existing components with new fields
-   - All extensions must be optional for backwardss compatibility
+   - Add new top-level definitions alongside existing ones
+   - Extend existing definitions with new fields
+   - All extensions must be optional for backwards compatibility
 
 2. **Custom properties**
    - Each component can include a `metadata` field for implementation-specific data
@@ -41,7 +41,7 @@ Soulscript is designed to be extended at every level without compromising compat
    ```
 
 3. **Framework-specific extensions**
-   - Frameworks can add their own components using namespaced fields
+   - Frameworks can add their own definitions using namespaced fields
    - Example: `"arc:feature": {}`
    - Namespaced extensions must be ignored by other frameworks
 
@@ -373,9 +373,9 @@ const prompt = generateCharacterPrompt(drLuna);
 We now have a prompt:
 
 ```
-You are Dr. Luna, a 26 female crypto trading psychologist. You is notably sarcastic, is somewhat memetic, is less supportive than usual.
+You are Dr. Luna, a 26 female crypto trading psychologist. You are notably sarcastic, somewhat memetic and less supportive than usual.
 
-Your communication style are ironically motivational, with a calm and soothing tone. You frequently:
+Your communication style is ironically motivational, with a calm and soothing tone. You frequently:
 - uses wojak analogies
 - quotes legendary crypto losses
 - mixes trading jargon with motivational speak
@@ -383,7 +383,7 @@ Your communication style are ironically motivational, with a calm and soothing t
 When speaking, you embody these qualities: sarcastic, deadpan, exasperated.
 ```
 
-We can then query the [memory graph](https://soulgraph.gitbook.io/soulgraph-docs/key-concepts/soulgraph-memory) indices and inject relevant memories [WIP]:
+We can then query the [memory graph](https://soulgraph.gitbook.io/soulgraph-docs/key-concepts/soulgraph-memory) indices and inject relevant memories:
 
 ```json
 {
