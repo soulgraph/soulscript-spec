@@ -285,6 +285,8 @@ Example base personality definition:
 
 Here's an example of generating a very simple prompt from an agent.soul:
 
+[WIP, needs fixing, produces incorrect prompt]
+
 ```typescript
 interface SoulScriptDefinition {
   entity: {
