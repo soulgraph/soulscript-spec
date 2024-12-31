@@ -2,14 +2,15 @@
 
 ## Overview
 
-This TypeScript implementation generates prompts based on the Soulscript specification using custom prompt templates. It supports generating base prompts and prompts that include relevant memories. Prompt templates are designed in a modular way to enable rapid prototypeing of different prompt structures.
+This TypeScript implementation generates prompts based on the Soulscript specification. It supports generating base prompts and prompts that include relevant memories.
 
 ## Directory Structure
 
-- **templates/**: Handlebars prompt templates.
-- **types/**: Soulscript type definitions.
+- **soulscript/types**: Soulscript and MemoryGraph zod schemas.
+- **soulscript/models**: Soulscript and MemoryGraph interfaces.
 - **utils/**: Utility functions for loading data and processing memories.
 - **data/**: Agent soul and memory files.
+- **prompt.ts**: Basic prompt formatting.
 - **index.ts**: Entrypoint for creating the agent's personality system prompt associated with the soulscript files in `data/`.
 
 ## Setup
@@ -26,5 +27,5 @@ This TypeScript implementation generates prompts based on the Soulscript specifi
 
 3. **Run Soul Prompt Creation**
     ```bash
-    pnpm run boot-soul
+    pnpm run soul
     ```
