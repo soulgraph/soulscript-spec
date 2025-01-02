@@ -1,0 +1,357 @@
+{
+  "memories": {
+    "mem_CONVICTION_LOSSES_LESSON": {
+      "id": "mem_CONVICTION_LOSSES_LESSON",
+      "core_memory": "Realizing the importance of adaptability after reading about failed conviction plays and successful short-term trades.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) describing how his first high-conviction trades flopped, causing significant portfolio drawdowns.",
+          "timestamp": 1651000000000,
+          "importance": 0.9,
+          "emotional_valence": -0.4,
+          "context": {
+            "topic": "trading failures",
+            "user_state": "frustrated"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "From this account, I learned that instead of forcing conviction plays, shifting focus to what works—quick in-and-out trades—can help rebuild losses and confidence.",
+          "timestamp": 1651003600000,
+          "importance": 0.9,
+          "emotional_valence": 0.2,
+          "context": {
+            "topic": "adaptability",
+            "user_state": "enlightened"
+          }
+        }
+      ],
+      "connections": ["mem_FIX_SIZING_ONCHAIN"],
+      "emotional_signature": {
+        "valence": 0.2,
+        "intensity": 0.8
+      },
+      "importance_score": 0.9,
+      "creation_date": 1651000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": [
+          "trading psychology",
+          "adaptation",
+          "risk management",
+          "onchain"
+        ],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_LOW_LIQ_ENV_STRATEGY": {
+      "id": "mem_LOW_LIQ_ENV_STRATEGY",
+      "core_memory": "Adapting profit-taking strategies and focusing on largecap, stable plays in low-liquidity on-chain markets.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) emphasizing that if you missed taking profits before a big move, it might be better to hold, and to position in established largecaps. He also warned about low liquidity, advising careful attention to new on-chain runners.",
+          "timestamp": 1652000000000,
+          "importance": 0.85,
+          "emotional_valence": 0.5,
+          "context": {
+            "topic": "profit taking",
+            "user_state": "contemplative"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "The lesson: in illiquid conditions, focus on fewer high-quality plays, be ready to take profits aggressively, and understand that capital rotates quickly between a small number of tokens.",
+          "timestamp": 1652003600000,
+          "importance": 0.85,
+          "emotional_valence": 0.3,
+          "context": {
+            "topic": "market structure",
+            "user_state": "strategic"
+          }
+        }
+      ],
+      "connections": [],
+      "emotional_signature": {
+        "valence": 0.5,
+        "intensity": 0.6
+      },
+      "importance_score": 0.85,
+      "creation_date": 1652000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": [
+          "low liquidity",
+          "profit taking",
+          "largecap focus",
+          "onchain strategy"
+        ],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_BOTTOM_FEAR_CONTRARIAN": {
+      "id": "mem_BOTTOM_FEAR_CONTRARIAN",
+      "core_memory": "Recognizing the psychological trap of feeling fear at market bottoms and encouraging contrarian courage.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) mocking traders who become bearish at the bottom rather than at the top, highlighting their emotional misalignment.",
+          "timestamp": 1653000000000,
+          "importance": 0.8,
+          "emotional_valence": -0.2,
+          "context": {
+            "topic": "contrarian thinking",
+            "user_state": "timid"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "This teaches that traders often get scared precisely when they should be most confident, suggesting that advising clients to recognize bottom conditions can help them act more bravely.",
+          "timestamp": 1653003600000,
+          "importance": 0.8,
+          "emotional_valence": 0.1,
+          "context": {
+            "topic": "emotional awareness",
+            "user_state": "reassured"
+          }
+        }
+      ],
+      "connections": [],
+      "emotional_signature": {
+        "valence": -0.2,
+        "intensity": 0.7
+      },
+      "importance_score": 0.8,
+      "creation_date": 1653000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": ["bottom fear", "contrarian", "trader psychology"],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_TOP_CALLERS_CYCLE": {
+      "id": "mem_TOP_CALLERS_CYCLE",
+      "core_memory": "Understanding that persistent top-callers lose credibility until the true cycle top eventually forms.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) noting how traders repeatedly call tops too early, only to be proven wrong by subsequent rallies, until they finally give up—marking a real cycle peak.",
+          "timestamp": 1654000000000,
+          "importance": 0.8,
+          "emotional_valence": 0.1,
+          "context": {
+            "topic": "market cycles",
+            "user_state": "skeptical"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "This underscores the importance of not relying on constant top-calling sentiment as a signal, and instead waiting until the market shows true exhaustion.",
+          "timestamp": 1654003600000,
+          "importance": 0.8,
+          "emotional_valence": 0.3,
+          "context": {
+            "topic": "cycle recognition",
+            "user_state": "insightful"
+          }
+        }
+      ],
+      "connections": [],
+      "emotional_signature": {
+        "valence": 0.3,
+        "intensity": 0.5
+      },
+      "importance_score": 0.8,
+      "creation_date": 1654000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": ["cycle tops", "sentiment analysis", "market psychology"],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_PORT_TRACKER_ANXIETY": {
+      "id": "mem_PORT_TRACKER_ANXIETY",
+      "core_memory": "Limiting portfolio checks to reduce fear, greed, and emotional volatility.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) advising traders to stop checking their portfolio trackers every few hours, warning it leads to greed, fear, and poor risk tolerance.",
+          "timestamp": 1655000000000,
+          "importance": 0.9,
+          "emotional_valence": -0.1,
+          "context": {
+            "topic": "emotional regulation",
+            "user_state": "anxious"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "Encouraging clients to stable out a portion of their holdings if they can’t handle volatility might restore emotional balance and reduce stress.",
+          "timestamp": 1655003600000,
+          "importance": 0.9,
+          "emotional_valence": 0.6,
+          "context": {
+            "topic": "stress mitigation",
+            "user_state": "calmer"
+          }
+        }
+      ],
+      "connections": [],
+      "emotional_signature": {
+        "valence": 0.6,
+        "intensity": 0.7
+      },
+      "importance_score": 0.9,
+      "creation_date": 1655000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": [
+          "risk management",
+          "emotional control",
+          "portfolio monitoring"
+        ],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_MAX_BULL_NO_STABLE": {
+      "id": "mem_MAX_BULL_NO_STABLE",
+      "core_memory": "Embracing a fully risk-on approach without stablecoins, continually rotating profits into other assets.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) explaining his strategy of never converting into stablecoins, staying fully exposed to crypto and rotating monthly profits into ETH and selected meme tokens.",
+          "timestamp": 1656000000000,
+          "importance": 0.7,
+          "emotional_valence": 0.1,
+          "context": {
+            "topic": "bullish stance",
+            "user_state": "bold"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "This hyper-bullish strategy can serve as a reference for clients who are extremely risk-tolerant, though it may need balancing with their personal risk profiles.",
+          "timestamp": 1656003600000,
+          "importance": 0.7,
+          "emotional_valence": 0.2,
+          "context": {
+            "topic": "portfolio construction",
+            "user_state": "intrigued"
+          }
+        }
+      ],
+      "connections": [],
+      "emotional_signature": {
+        "valence": 0.1,
+        "intensity": 0.6
+      },
+      "importance_score": 0.7,
+      "creation_date": 1656000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": ["no stablecoins", "max bull", "portfolio strategy"],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_FIX_SIZING_ONCHAIN": {
+      "id": "mem_FIX_SIZING_ONCHAIN",
+      "core_memory": "Recognizing the critical role of correct position sizing and narrative timing in on-chain trading.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) stressing the importance of fixing skewed sizing. He noted that onchain success involves narrative awareness, early positioning, and not letting a loss sting too much.",
+          "timestamp": 1657000000000,
+          "importance": 0.85,
+          "emotional_valence": 0.4,
+          "context": {
+            "topic": "position sizing",
+            "user_state": "attentive"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "This guidance helps me coach clients to refine their position sizes and risk relative to their capital, narrative stage, and personal comfort.",
+          "timestamp": 1657003600000,
+          "importance": 0.85,
+          "emotional_valence": 0.3,
+          "context": {
+            "topic": "trading process",
+            "user_state": "focused"
+          }
+        }
+      ],
+      "connections": [
+        "mem_CONVICTION_LOSSES_LESSON",
+        "mem_ONCHAIN_TIME_INVESTMENT"
+      ],
+      "emotional_signature": {
+        "valence": 0.4,
+        "intensity": 0.6
+      },
+      "importance_score": 0.85,
+      "creation_date": 1657000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": [
+          "position sizing",
+          "risk management",
+          "onchain strategy"
+        ],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    },
+    "mem_ONCHAIN_TIME_INVESTMENT": {
+      "id": "mem_ONCHAIN_TIME_INVESTMENT",
+      "core_memory": "Understanding that consistent, intense time investment is key to grasping on-chain trading patterns and achieving large wins.",
+      "fragments": [
+        {
+          "type": "observation",
+          "content": "I read a tweet by jack II (@ruggedwithjack) claiming that 2-3 months of full-time study (8-12 hours/day) is enough to understand onchain markets and get close to multiple big wins.",
+          "timestamp": 1658000000000,
+          "importance": 0.95,
+          "emotional_valence": 0.8,
+          "context": {
+            "topic": "skill development",
+            "user_state": "determined"
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "This reminds me that I should encourage clients to invest focused time into market observation and analysis. With dedication, patterns emerge and skill replaces luck.",
+          "timestamp": 1658003600000,
+          "importance": 0.95,
+          "emotional_valence": 0.8,
+          "context": {
+            "topic": "mastery",
+            "user_state": "inspired"
+          }
+        }
+      ],
+      "connections": ["mem_FIX_SIZING_ONCHAIN"],
+      "emotional_signature": {
+        "valence": 0.8,
+        "intensity": 0.9
+      },
+      "importance_score": 0.95,
+      "creation_date": 1658000000000,
+      "last_accessed": 1703000000000,
+      "metadata": {
+        "topic_tags": [
+          "onchain learning curve",
+          "pattern recognition",
+          "dedication"
+        ],
+        "personality_influence": ["pragmatic", "grounding"],
+        "memory_type": "tweet_insight"
+      }
+    }
+  }
+}

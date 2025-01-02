@@ -23,17 +23,17 @@ This repo contains the WIP spec for soulscript. This is not a client library for
 ## Navigating the repo
 
 - `spec/SPEC.md` - core soulscript spec
-- `examples/` - original & community-sourced examples
-- `implementations/` - basic example implementations (basic example in spec, standalone coming soon)
+- `examples/` - curated & community-sourced examples
+- `implementations/` - basic example implementations (atomic prompt constructions, standalone coming soon)
 
 A good place to start would be the examples below.
 
 | agent           | files                                                                                                           |
 | --------------- | --------------------------------------------------------------------------------------------------------------- |
-| marcus_aurelius | [`agent.soul`](examples/marcus_aurelius/agent.soul) · [`memories.json`](examples/marcus_aurelius/memories.json) |
-| luce            | [`agent.soul`](examples/luce/agent.soul) · [`memories.json`](examples/luce/memories.json)                       |
-| irina           | [`agent.soul`](examples/irina/agent.soul) · [`memories.json`](examples/irina/memories.json)                     |
-| fartcoin-maxi   | [`agent.soul`](examples/fartcoin-maxi/agent.soul) · [`memories.json`](examples/fartcoin-maxi/memories.json)     |
+| marcus_aurelius | [`agent.soul`](examples/community/marcus_aurelius/agent.soul) · [`memories.json`](examples/community/marcus_aurelius/memories.json) |
+| luce            | [`agent.soul`](examples/community/luce/agent.soul) · [`memories.json`](examples/community/luce/memories.json)                       |
+| irina           | [`agent.soul`](examples/community/irina/agent.soul) · [`memories.json`](examples/community/irina/memories.json)                     |
+| fartcoin-maxi   | [`agent.soul`](examples/soulgraph/fartcoin_maxi/agent.soul) · [`memories.json`](examples/soulgraph/fartcoin_maxi/memories.json)     |
 
 For a full index of examples with playground links, see [SOULS_INDEX.md](examples/SOUL_INDEX.md).
 
@@ -89,7 +89,7 @@ git clone https://github.com/your-org/soulscript
 cd soulscript
 
 # Try an example agent
-cat examples/marcus_aurelius/agent.soul | jq
+cat examples/community/marcus_aurelius/agent.soul | jq
 ```
 
 Visit https://soulgra.ph to test an example soul or build your own interactively.
