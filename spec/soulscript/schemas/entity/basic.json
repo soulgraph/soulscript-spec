@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/entity/basic.json",
+  "title": "Basic Entity Properties",
+  "type": "object",
+  "properties": {
+    "form": {
+      "type": "string",
+      "description": "Physical or virtual form of the entity"
+    },
+    "occupation": {
+      "type": "string",
+      "description": "Primary role or function"
+    },
+    "gender": {
+      "type": "string",
+      "description": "Gender identity if applicable"
+    },
+    "age": {
+      "type": "string",
+      "description": "Age or development stage"
+    },
+    "background": {
+      "type": "string",
+      "description": "Historical context and origin story"
+    }
+  }
+}
