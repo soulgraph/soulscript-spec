@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://github.com/soulgraph/soulscript/tree/main/spec/soulscript.schema.json",
+	"$id": "https://github.com/soulgraph/soulscript/tree/main/spec/soulscript/soulscript.schema.json",
 	"title": "Soul",
 	"type": "object",
 	"required": ["version", "id", "entity", "personality"],
