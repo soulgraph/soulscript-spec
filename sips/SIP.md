@@ -1,4 +1,4 @@
-# SoulScript Improvement Proposals (SIPs)
+# SoulScript Improvement Proposals (SIP)
 
 ## What is a SIP?
 
@@ -24,21 +24,14 @@ A SoulScript Improvement Proposal (SIP) is a design document providing informati
 
 # SIP-XXX: Title
 
-**Status**: [Current status of the proposal]
-
-**Authors**: [List of authors/contributors]
-
-**Summary**: A brief (~200 word) description of the feature or change.
-
-**Motivation**: Why is this change necessary? What problems does it solve?
-
-**Specification**: Detailed technical description of the proposed change.
-
-**Rationale**: Why was this design chosen over alternatives?
-
-**Backwards Compatibility**: Impact on existing code and migration path if applicable.
-
-**Reference Implementation**: Link to implementation or proof of concept if available.
+- **Status**: [Current status of the proposal]
+- **Authors**: [List of authors/contributors]
+- **Summary**: A brief (~200 word) description of the feature or change.
+- **Motivation**: Why is this change necessary? What problems does it solve?
+- **Specification**: Detailed technical description of the proposed change.
+- **Rationale**: Why was this design chosen over alternatives?
+- **Backwards Compatibility**: Impact on existing code and migration path if applicable.
+- **Reference Implementation**: Link to implementation or proof of concept if available.
 
 ## Submitting a SIP
 
@@ -58,5 +51,4 @@ A SoulScript Improvement Proposal (SIP) is a design document providing informati
 
 ## Current SIPs
 
-S
-
+- [SIP-0001: Evolving Memory Graph via `recall_count` and Dynamic Edge Weights](./sip_0001.md)
