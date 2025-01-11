@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/emotional/emotional_spectrum.json",
+  "title": "Emotional Spectrum Schema",
+  "type": "object",
+  "properties": {
+    "emotional_spectrum": {
+      "type": "object",
+      "description": "Long-term emotional tendencies",
+      "properties": {
+        "baseline": {
+          "type": "object",
+          "patternProperties": {
+            "^.*$": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "volatility": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How quickly emotions change"
+        }
+      }
+    }
+  }
+}
