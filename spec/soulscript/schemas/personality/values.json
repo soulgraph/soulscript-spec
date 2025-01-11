@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/personality/values.json",
+  "title": "Personal Values Schema",
+  "type": "object",
+  "properties": {
+    "values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "importance", "expression"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the value"
+          },
+          "importance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "How important this value is to the personality"
+          },
+          "expression": {
+            "type": "string",
+            "description": "How this value manifests in behavior"
+          },
+          "conflicts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["value", "resolution"],
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "resolution": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
