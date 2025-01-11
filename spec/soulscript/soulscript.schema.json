@@ -1,200 +1,126 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://github.com/soulgraph/soulscript/tree/main/spec/soulscript/soulscript.schema.json",
-	"title": "Soul",
-	"type": "object",
-	"required": ["version", "id", "entity", "personality"],
-	"properties": {
-		"version": {
-			"type": "string",
-			"description": "Schema version"
-		},
-		"id": {
-			"type": "string",
-			"format": "uuid",
-			"description": "Unique identifier for the soul"
-		},
-		"entity": {
-			"type": "object",
-			"required": ["form", "occupation"],
-			"properties": {
-				"id": {
-					"type": "string",
-					"format": "uuid"
-				},
-				"form": {
-					"type": "string"
-				},
-				"occupation": {
-					"type": "string"
-				},
-				"gender": {
-					"type": "string"
-				},
-				"age": {
-					"type": "string"
-				},
-				"background": {
-					"type": "string"
-				},
-				"expertise": {
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				}
-			}
-		},
-		"personality": {
-			"type": "object",
-			"required": ["name", "traits"],
-			"properties": {
-				"id": {
-					"type": "string",
-					"format": "uuid"
-				},
-				"name": {
-					"type": "string"
-				},
-				"traits": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"required": ["trait", "strength"],
-						"properties": {
-							"id": {
-								"type": "string",
-								"format": "uuid"
-							},
-							"trait": {
-								"type": "string"
-							},
-							"strength": {
-								"type": "number",
-								"minimum": 0,
-								"maximum": 1
-							},
-							"expression_rules": {
-								"type": "array",
-								"items": {
-									"type": "string"
-								}
-							}
-						}
-					}
-				},
-				"values": {
-					"type": "array",
-					"items": {
-						"type": "object",
-						"required": ["name", "importance", "expression"],
-						"properties": {
-							"id": {
-								"type": "string",
-								"format": "uuid"
-							},
-							"name": {
-								"type": "string"
-							},
-							"importance": {
-								"type": "number",
-								"minimum": 0,
-								"maximum": 1
-							},
-							"expression": {
-								"type": "string"
-							},
-							"conflicts": {
-								"type": "array",
-								"items": {
-									"type": "object",
-									"required": ["value", "resolution"],
-									"properties": {
-										"id": {
-											"type": "string",
-											"format": "uuid"
-										},
-										"value": {
-											"type": "string"
-										},
-										"resolution": {
-											"type": "string"
-										}
-									}
-								}
-							}
-						}
-					}
-				},
-				"voice": {
-					"type": "object",
-					"required": ["style", "tone", "qualities", "patterns"],
-					"properties": {
-						"id": {
-							"type": "string",
-							"format": "uuid"
-						},
-						"style": {
-							"type": "string"
-						},
-						"tone": {
-							"type": "string"
-						},
-						"qualities": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						},
-						"patterns": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					}
-				},
-				"relationship": {
-					"type": "object",
-					"required": ["style", "boundaries"],
-					"properties": {
-						"id": {
-							"type": "string",
-							"format": "uuid"
-						},
-						"style": {
-							"type": "string"
-						},
-						"boundaries": {
-							"type": "array",
-							"items": {
-								"type": "object",
-								"required": ["type", "description", "enforcement"],
-								"properties": {
-									"id": {
-										"type": "string",
-										"format": "uuid"
-									},
-									"type": {
-										"type": "string"
-									},
-									"description": {
-										"type": "string"
-									},
-									"enforcement": {
-										"type": "string",
-										"enum": ["strict", "flexible", "situational"]
-									}
-								}
-							}
-						}
-					}
-				},
-				"metadata": {
-					"type": "object",
-					"additionalProperties": true
-				}
-			}
-		}
-	}
-}
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/soulgraph/soulscript/tree/main/spec/soulscript/soulscript.schema.json",
+  "title": "Soul",
+  "type": "object",
+  "required": ["version", "id", "entity", "personality", "emotional_state"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version following semantic versioning",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the soul"
+    },
+    "entity": {
+      "type": "object",
+      "required": ["form", "occupation"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "form": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "age": {
+          "type": "string"
+        },
+        "background": {
+          "type": "string"
+        },
+        "expertise": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "emotional_state": {
+      "type": "object",
+      "required": ["current_mood", "emotional_spectrum"],
+      "properties": {
+        "current_mood": {
+          "type": "object",
+          "required": ["primary", "intensity"],
+          "properties": {
+            "primary": {
+              "type": "string",
+              "description": "Primary emotion being experienced"
+            },
+            "secondary": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Secondary emotions that may be present"
+            },
+            "intensity": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Intensity of the primary emotion"
+            }
+          }
+        },
+        "emotional_spectrum": {
+          "type": "object",
+          "description": "Long-term emotional tendencies",
+          "properties": {
+            "baseline": {
+              "type": "object",
+              "patternProperties": {
+                "^.*$": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "volatility": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "How quickly emotions change"
+            }
+          }
+        },
+        "triggers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["condition", "response"],
+            "properties": {
+              "condition": {
+                "type": "string",
+                "description": "Condition that triggers emotional response"
+              },
+              "response": {
+                "type": "object",
+                "required": ["emotion", "intensity"],
+                "properties": {
+                  "emotion": {
+                    "type": "string"
+                  },
+                  "intensity": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
