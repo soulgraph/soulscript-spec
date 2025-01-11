@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/personality/traits.json",
+  "title": "Personality Traits Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the personality"
+    },
+    "traits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trait", "strength", "category"],
+        "properties": {
+          "trait": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["openness", "conscientiousness", "extraversion", "agreeableness", "neuroticism"]
+          },
+          "strength": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "expression_rules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
