@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/personality/voice.json",
+  "title": "Voice and Expression Schema",
+  "type": "object",
+  "properties": {
+    "voice": {
+      "type": "object",
+      "required": ["style", "tone", "qualities"],
+      "properties": {
+        "style": {
+          "type": "string",
+          "description": "Overall communication style"
+        },
+        "tone": {
+          "type": "string",
+          "description": "Emotional tone of communication"
+        },
+        "qualities": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Specific qualities of voice and expression"
+          }
+        },
+        "adaptiveness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How much the voice adapts to context"
+        }
+      }
+    }
+  }
+}
