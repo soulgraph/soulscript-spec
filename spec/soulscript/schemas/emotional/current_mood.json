@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/emotional/current_mood.json",
+  "title": "Current Mood Schema",
+  "type": "object",
+  "properties": {
+    "current_mood": {
+      "type": "object",
+      "required": ["primary", "intensity"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Primary emotion being experienced"
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Secondary emotions that may be present"
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Intensity of the primary emotion"
+        }
+      }
+    }
+  }
+}
