@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/index.json",
+  "title": "SoulScript Schema Index",
+  "type": "object",
+  "required": ["version", "id"],
+  "allOf": [
+    { "$ref": "./core/version.json" },
+    { "$ref": "./core/identity.json" },
+    { "$ref": "./entity/index.json" },
+    { "$ref": "./emotional/index.json" },
+    { "$ref": "./personality/index.json" }
+  ]
+}
