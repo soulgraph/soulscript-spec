@@ -1,0 +1,168 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/soulgraph/soulscript/tree/main/spec/memories/memory.schema.json",
+	"title": "Memory",
+	"type": "object",
+	"required": [
+		"id",
+		"memory",
+		"fragments",
+		"connections",
+		"emotional_signature",
+		"importance_score",
+		"creation_date",
+		"last_accessed",
+		"metadata"
+	],
+	"properties": {
+		"id": {
+			"type": "string",
+			"format": "uuid",
+			"description": "Unique identifier for the memory"
+		},
+		"memory": {
+			"type": "string",
+			"description": "Central concept or learning captured by this memory"
+		},
+		"fragments": {
+			"$ref": "#/$defs/fragments"
+		},
+		"connections": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"format": "uuid"
+			},
+			"description": "References to related memories by their UUIDs"
+		},
+		"emotional_signature": {
+			"$ref": "#/$defs/emotional_signature"
+		},
+		"importance_score": {
+			"type": "number",
+			"minimum": 0,
+			"maximum": 1
+		},
+		"creation_date": {
+			"type": "integer",
+			"format": "int64",
+			"description": "Unix timestamp in milliseconds"
+		},
+		"last_accessed": {
+			"type": "integer",
+			"format": "int64",
+			"description": "Unix timestamp in milliseconds"
+		},
+		"metadata": {
+			"$ref": "#/$defs/metadata"
+		}
+	},
+	"$defs": {
+		"context": {
+			"type": "object",
+			"required": ["id", "topic", "user_state"],
+			"properties": {
+				"id": {
+					"type": "string",
+					"format": "uuid"
+				},
+				"topic": {
+					"type": "string"
+				},
+				"user_state": {
+					"type": "string"
+				}
+			}
+		},
+		"fragments": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"id",
+					"type",
+					"content",
+					"timestamp",
+					"importance",
+					"emotional_valence",
+					"context"
+				],
+				"properties": {
+					"id": {
+						"type": "string",
+						"format": "uuid"
+					},
+					"type": {
+						"type": "string",
+						"enum": ["observation", "reflection"]
+					},
+					"content": {
+						"type": "string"
+					},
+					"timestamp": {
+						"type": "integer",
+						"format": "int64"
+					},
+					"importance": {
+						"type": "number",
+						"minimum": 0,
+						"maximum": 1
+					},
+					"emotional_valence": {
+						"type": "number",
+						"minimum": -1,
+						"maximum": 1
+					},
+					"context": {
+						"$ref": "#/$defs/context"
+					}
+				}
+			}
+		},
+		"emotional_signature": {
+			"type": "object",
+			"required": ["id", "valence", "intensity"],
+			"properties": {
+				"id": {
+					"type": "string",
+					"format": "uuid"
+				},
+				"valence": {
+					"type": "number",
+					"minimum": -1,
+					"maximum": 1
+				},
+				"intensity": {
+					"type": "number",
+					"minimum": 0,
+					"maximum": 1
+				}
+			}
+		},
+		"metadata": {
+			"type": "object",
+			"required": ["id", "topic_tags", "personality_influence", "memory_type"],
+			"properties": {
+				"id": {
+					"type": "string",
+					"format": "uuid"
+				},
+				"topic_tags": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"personality_influence": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"memory_type": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

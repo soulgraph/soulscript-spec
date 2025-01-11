@@ -1,0 +1,200 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/soulgraph/soulscript/tree/main/spec/soulscript/soulscript.schema.json",
+	"title": "Soul",
+	"type": "object",
+	"required": ["version", "id", "entity", "personality"],
+	"properties": {
+		"version": {
+			"type": "string",
+			"description": "Schema version"
+		},
+		"id": {
+			"type": "string",
+			"format": "uuid",
+			"description": "Unique identifier for the soul"
+		},
+		"entity": {
+			"type": "object",
+			"required": ["form", "occupation"],
+			"properties": {
+				"id": {
+					"type": "string",
+					"format": "uuid"
+				},
+				"form": {
+					"type": "string"
+				},
+				"occupation": {
+					"type": "string"
+				},
+				"gender": {
+					"type": "string"
+				},
+				"age": {
+					"type": "string"
+				},
+				"background": {
+					"type": "string"
+				},
+				"expertise": {
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			}
+		},
+		"personality": {
+			"type": "object",
+			"required": ["name", "traits"],
+			"properties": {
+				"id": {
+					"type": "string",
+					"format": "uuid"
+				},
+				"name": {
+					"type": "string"
+				},
+				"traits": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": ["trait", "strength"],
+						"properties": {
+							"id": {
+								"type": "string",
+								"format": "uuid"
+							},
+							"trait": {
+								"type": "string"
+							},
+							"strength": {
+								"type": "number",
+								"minimum": 0,
+								"maximum": 1
+							},
+							"expression_rules": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"values": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": ["name", "importance", "expression"],
+						"properties": {
+							"id": {
+								"type": "string",
+								"format": "uuid"
+							},
+							"name": {
+								"type": "string"
+							},
+							"importance": {
+								"type": "number",
+								"minimum": 0,
+								"maximum": 1
+							},
+							"expression": {
+								"type": "string"
+							},
+							"conflicts": {
+								"type": "array",
+								"items": {
+									"type": "object",
+									"required": ["value", "resolution"],
+									"properties": {
+										"id": {
+											"type": "string",
+											"format": "uuid"
+										},
+										"value": {
+											"type": "string"
+										},
+										"resolution": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"voice": {
+					"type": "object",
+					"required": ["style", "tone", "qualities", "patterns"],
+					"properties": {
+						"id": {
+							"type": "string",
+							"format": "uuid"
+						},
+						"style": {
+							"type": "string"
+						},
+						"tone": {
+							"type": "string"
+						},
+						"qualities": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"patterns": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				},
+				"relationship": {
+					"type": "object",
+					"required": ["style", "boundaries"],
+					"properties": {
+						"id": {
+							"type": "string",
+							"format": "uuid"
+						},
+						"style": {
+							"type": "string"
+						},
+						"boundaries": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"required": ["type", "description", "enforcement"],
+								"properties": {
+									"id": {
+										"type": "string",
+										"format": "uuid"
+									},
+									"type": {
+										"type": "string"
+									},
+									"description": {
+										"type": "string"
+									},
+									"enforcement": {
+										"type": "string",
+										"enum": ["strict", "flexible", "situational"]
+									}
+								}
+							}
+						}
+					}
+				},
+				"metadata": {
+					"type": "object",
+					"additionalProperties": true
+				}
+			}
+		}
+	}
+}
