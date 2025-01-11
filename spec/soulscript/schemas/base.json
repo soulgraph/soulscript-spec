@@ -1,1 +1,19 @@
-ewogICIkc2NoZW1hIjogImh0dHBzOi8vanNvbi1zY2hlbWEub3JnL2RyYWZ0LzIwMjAtMTIvc2NoZW1hIiwKICAiJGlkIjogImh0dHBzOi8vZ2l0aHViLmNvbS9zb3VsZ3JhcGgvc291bHNjcmlwdC90cmVlL21haW4vc3BlYy9zb3Vsc2NyaXB0L2Jhc2Uuc2NoZW1hLmpzb24iLAogICJ0aXRsZSI6ICJTb3VsU2NyaXB0IEJhc2UgU2NoZW1hIiwKICAidHlwZSI6ICJvYmplY3QiLAogICJyZXF1aXJlZCI6IFsidmVyc2lvbiIsICJpZCJdLAogICJwcm9wZXJ0aWVzIjogewogICAgInZlcnNpb24iOiB7CiAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTY2hlbWEgdmVyc2lvbiBmb2xsb3dpbmcgc2VtYW50aWMgdmVyc2lvbmluZyIsCiAgICAgICJwYXR0ZXJuIjogIl4oMHxbMS05XVxcZCopXFwuKDB8WzEtOV1cXGQqKVxcLigwfFsxLTldXFxkKikoPzotKD86MHxbMS05XVxcZCp8XFxkKlthLXpBLVotXVswLTlhLXpBLVotXSopKD86XFwuKD86MHxbMS05XVxcZCp8XFxkKlthLXpBLVotXVswLTlhLXpBLVotXSopKSopKT8oPzpcXCsoWzAtOWEtekEtWi1dKyg/OlxcLlswLTlhLXpBLVotXSspKikpPyQiCiAgICB9LAogICAgImlkIjogewogICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAiZm9ybWF0IjogInV1aWQiLAogICAgICAiZGVzY3JpcHRpb24iOiAiVW5pcXVlIGlkZW50aWZpZXIgZm9yIHRoZSBzb3VsIGluc3RhbmNlIgogICAgfQogIH0KfQ==
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/base.json",
+  "title": "SoulScript Base Schema",
+  "type": "object",
+  "required": ["version", "id"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version following semantic versioning",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the soul instance"
+    }
+  }
+}
