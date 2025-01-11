@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/entity/expertise.json",
+  "title": "Entity Expertise",
+  "type": "object",
+  "properties": {
+    "expertise": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domain", "level"],
+        "properties": {
+          "domain": {
+            "type": "string",
+            "description": "Area of expertise"
+          },
+          "level": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Proficiency level"
+          },
+          "specializations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

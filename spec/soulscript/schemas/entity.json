@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/entity.json",
+  "title": "SoulScript Entity Schema",
+  "type": "object",
+  "required": ["form", "occupation"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "form": {
+      "type": "string",
+      "description": "Physical or virtual form of the entity"
+    },
+    "occupation": {
+      "type": "string",
+      "description": "Primary role or function"
+    },
+    "gender": {
+      "type": "string",
+      "description": "Gender identity if applicable"
+    },
+    "age": {
+      "type": "string",
+      "description": "Age or development stage"
+    },
+    "background": {
+      "type": "string",
+      "description": "Historical context and origin story"
+    },
+    "expertise": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domain", "level"],
+        "properties": {
+          "domain": {
+            "type": "string",
+            "description": "Area of expertise"
+          },
+          "level": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Proficiency level"
+          },
+          "specializations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

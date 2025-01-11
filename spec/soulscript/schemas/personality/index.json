@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/personality/index.json",
+  "title": "Personality Schema",
+  "type": "object",
+  "required": ["name", "traits"],
+  "allOf": [
+    { "$ref": "./traits.json" },
+    { "$ref": "./values.json" },
+    { "$ref": "./voice.json" }
+  ]
+}

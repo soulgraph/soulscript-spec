@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/soulgraph/soulscript-spec/main/spec/soulscript/schemas/emotional/triggers.json",
+  "title": "Emotional Triggers Schema",
+  "type": "object",
+  "properties": {
+    "triggers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["condition", "response"],
+        "properties": {
+          "condition": {
+            "type": "string",
+            "description": "Condition that triggers emotional response"
+          },
+          "response": {
+            "type": "object",
+            "required": ["emotion", "intensity"],
+            "properties": {
+              "emotion": {
+                "type": "string"
+              },
+              "intensity": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
